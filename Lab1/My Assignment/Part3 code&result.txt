@@ -1,0 +1,13 @@
+ calculate the total purchase value
+{
+  _id: "$CustomerID",
+  totalPurchaseValue:{$sum:"$OrderValue"}
+}
+
+
+
+ calculate the total purchase quantity
+{
+  _id: "$CustomerID",
+  totalPurchaseQuantity:{$sum:"$TotalQuantityInOrder"}
+}
